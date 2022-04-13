@@ -1,0 +1,7 @@
+databaseChangeLog:
+  - include:
+      file: liquibase/migrations/V001-CREATE-TABLE-ORDERS.yaml
+  - include:
+      file: liquibase/migrations/V002-CREATE-TABLE-ITEMS.yml
+  - include:
+      file: liquibase/migrations/V003-CREATE-TABLE-ORDERS-ITEMS.yml

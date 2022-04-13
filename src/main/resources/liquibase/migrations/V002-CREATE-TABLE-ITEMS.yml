@@ -1,0 +1,40 @@
+databaseChangeLog:
+  - changeSet:
+      id: V002
+      labels: "table_items"
+      author: "andre.dev.linux@gmail.com"
+      comment: "Create table Items and Index"
+      changes:
+        - tagDatabase:
+            tag: 1.0.0
+        - createTable:
+            tableName: items
+            columns:
+              - column:
+                  name: item_id
+                  type: VARCHAR(37)
+                  autoIncrement: false
+                  constraints:
+                    primaryKey: true
+                    nullable: false
+              - column:
+                  name: product_id
+                  type: VARCHAR(37)
+                  constraints:
+                    nullable: false
+              - column:
+                  name: amount
+                  type: INTEGER
+                  constraints:
+                    nullable: false
+              - column:
+                  name: price
+                  type: NUMERIC(6,2)
+                  constraints:
+                    nullable: false
+        - createIndex:
+            indexName: idx_items
+            tableName: items
+            columns:
+              - column:
+                  name: product_id
