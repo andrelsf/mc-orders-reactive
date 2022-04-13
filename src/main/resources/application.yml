@@ -11,7 +11,7 @@ quarkus:
   datasource:
     db-kind: ${QUARKUS_DATASOURCE_KIND:postgresql}
     jdbc:
-      url: ${QUARKUS_DATASOURCE_JDBC_URL:vertx-reactive:postgresql://10.200.0.200:5432/mcorders}
+      url: ${QUARKUS_DATASOURCE_JDBC_URL:vertx-reactive:postgresql://10.200.0.210:5432/mcorders}
     username: ${QUARKUS_DATASOURCE_USERNAME:mcorders}
     password: ${QUARKUS_DATASOURCE_PASSWORD:mcorders}
   hibernate-orm:
