@@ -36,6 +36,12 @@
   </dependencyManagement>
 
   <dependencies>
+    <!-- Library internal -->
+    <dependency>
+      <groupId>br.dev.multicode</groupId>
+      <artifactId>mc-lib</artifactId>
+      <version>1.0.0</version>
+    </dependency>
 
     <!-- RESTEasy Reactive -->
     <dependency>
