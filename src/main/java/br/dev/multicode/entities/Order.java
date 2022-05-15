@@ -2,7 +2,6 @@ package br.dev.multicode.entities;
 
 import br.dev.multicode.api.http.requests.OrderRequest;
 import br.dev.multicode.api.http.responses.OrderResponse;
-import br.dev.multicode.enums.OrderStatus;
 import io.quarkus.hibernate.reactive.panache.PanacheEntityBase;
 import java.math.BigDecimal;
 import java.time.ZonedDateTime;

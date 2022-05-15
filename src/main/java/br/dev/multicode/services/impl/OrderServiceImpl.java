@@ -50,7 +50,7 @@ public class OrderServiceImpl implements OrderService {
       .map(Order::toResponse);
   }
 
-  private Uni<Order> findOrderById(String orderId)
+  private Uni<Order> findOrderById(final String orderId)
   {
     return orderRepository.find(orderId)
       .replaceIfNullWith(() -> {
